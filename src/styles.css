@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .menu-section {
+    border: 1px solid black;
+    padding: 30px 10px 10px 10px;
+    background-color: #f1f1f1;
+    float: left;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .menu-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff9999;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  
+  #beef .menu-title {
+    background-color: #e74c3c;
+  }
+  
+  #sushi .menu-title {
+    background-color: #f1c40f;
+  }
+  
+  /* Desktop */
+  @media (min-width: 992px) {
+    .menu-section {
+      width: 30%;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .menu-section {
+      width: 47%;
+    }
+  
+    .menu-section:nth-child(3) {
+      width: 100%;
+      clear: both;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    .menu-section {
+      width: 100%;
+      clear: both;
+    }
+  }
+  
